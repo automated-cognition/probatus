@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Python package for validation of binary classifiers">
+        <meta name="description" content="Validation of binary classifiers and data used to develop them">
       
       
       
@@ -16,7 +16,7 @@
         <meta name="author" content="ING Bank N. V.">
       
       <link rel="shortcut icon" href="../img/Probatus_P_white.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.358818c7.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.21aed14c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.f0267088.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
         
           
           
@@ -117,7 +117,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -169,14 +169,26 @@
     <ul class="md-tabs__list">
       
         
+  <li class="md-tabs__item">
+    
+    
+    <a href="../index.html" class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
   
   
     <li class="md-tabs__item">
       
-        <a href="../index.html" class="md-tabs__link">
-          Home
-        </a>
       
+        
+      
+      <a href="nb_shap_feature_elimination.html" class="md-tabs__link md-tabs__link--active">
+        Tutorials
+      </a>
     </li>
   
 
@@ -186,26 +198,15 @@
   
     <li class="md-tabs__item">
       
-        <a href="nb_shap_feature_elimination.html" class="md-tabs__link md-tabs__link--active">
-          Tutorials
-        </a>
       
+      <a href="../api/feature_elimination.html" class="md-tabs__link">
+        API
+      </a>
     </li>
   
 
       
         
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../api/feature_elimination.html" class="md-tabs__link">
-          API
-        </a>
-      
-    </li>
-  
-
       
     </ul>
   </div>
@@ -251,36 +252,10 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
-    
-    <label class="md-nav__link" for="nav-1">
-      Home
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Home" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon"></span>
-        Home
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
     <a href="../index.html" class="md-nav__link">
-      Index
+      Home
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -293,8 +268,7 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     <label class="md-nav__link" for="nav-2">
       Tutorials
       <span class="md-nav__icon md-icon"></span>
@@ -326,7 +300,7 @@
 
   <li class="md-nav__item">
     <a href="nb_shap_model_interpreter.html" class="md-nav__link">
-      Tree-based Model Interpretation with SHAP
+      Tree-based & Linear Model Interpretation with SHAP
     </a>
   </li>
 
@@ -470,8 +444,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       API
       <span class="md-nav__icon md-icon"></span>
@@ -558,6 +531,18 @@
         
       </ul>
     </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributing.html" class="md-nav__link">
+      Contributing
+    </a>
   </li>
 
     
@@ -710,8 +695,16 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
+<div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">capture</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">probatus</span>
+</code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="o">%</span><span class="n">load_ext</span> <span class="n">autoreload</span>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">load_ext</span> <span class="n">autoreload</span>
 <span class="o">%</span><span class="n">autoreload</span> <span class="mi">2</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -721,8 +714,6 @@
 <span class="kn">from</span> <span class="nn">probatus.binning</span> <span class="kn">import</span> <span class="n">AgglomerativeBucketer</span><span class="p">,</span> <span class="n">SimpleBucketer</span><span class="p">,</span> <span class="n">QuantileBucketer</span>
 <span class="kn">from</span> <span class="nn">probatus.stat_tests</span> <span class="kn">import</span> <span class="n">DistributionStatistics</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">ks</span>
 </code></pre></div>
-
-
 
 </div>
 </div>
@@ -736,29 +727,23 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">counts</span> <span class="o">=</span> <span class="mi">1000</span>
+<div class="highlight"><pre><span></span><code><span class="n">counts</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">d1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">counts</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;feature_1&#39;</span><span class="p">)</span>
 <span class="n">d2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">counts</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;feature_1&#39;</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">probatus.utils.plots</span> <span class="kn">import</span> <span class="n">plot_distributions_of_feature</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">probatus.utils.plots</span> <span class="kn">import</span> <span class="n">plot_distributions_of_feature</span>
 
 <span class="n">feature_distributions</span> <span class="o">=</span> <span class="p">[</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">]</span>
 <span class="n">sample_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;expected&#39;</span><span class="p">,</span> <span class="s1">&#39;actual&#39;</span><span class="p">]</span>
 <span class="n">plot_distributions_of_feature</span><span class="p">(</span><span class="n">feature_distributions</span><span class="p">,</span> <span class="n">sample_names</span><span class="o">=</span><span class="n">sample_names</span><span class="p">,</span> <span class="n">plot_perc_outliers_removed</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -785,8 +770,7 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">bins</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight"><pre><span></span><code><span class="n">bins</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">myBucketer</span> <span class="o">=</span> <span class="n">QuantileBucketer</span><span class="p">(</span><span class="n">bins</span><span class="p">)</span>
 <span class="n">d1_bincounts</span> <span class="o">=</span> <span class="n">myBucketer</span><span class="o">.</span><span class="n">fit_compute</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
 <span class="n">d2_bincounts</span> <span class="o">=</span> <span class="n">myBucketer</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
@@ -795,8 +779,6 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">d1_bincounts</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">d2_bincounts</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -824,16 +806,13 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">d1_bincounts</span><span class="p">)),</span> <span class="n">d1_bincounts</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;d1: expected&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">d2_bincounts</span><span class="p">)),</span> <span class="n">d2_bincounts</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;d2: actual&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;PSI (bucketed)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -868,11 +847,8 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">psi_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">psi</span><span class="p">(</span><span class="n">d1_bincounts</span><span class="p">,</span> <span class="n">d2_bincounts</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">psi_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">psi</span><span class="p">(</span><span class="n">d1_bincounts</span><span class="p">,</span> <span class="n">d2_bincounts</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -920,12 +896,9 @@ Not only the PSI statistic is above the commonly used critical value, but also t
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">distribution_test</span> <span class="o">=</span> <span class="n">DistributionStatistics</span><span class="p">(</span><span class="s2">&quot;psi&quot;</span><span class="p">,</span> <span class="n">binning_strategy</span><span class="o">=</span><span class="s2">&quot;default&quot;</span><span class="p">,</span> <span class="n">bin_count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">distribution_test</span> <span class="o">=</span> <span class="n">DistributionStatistics</span><span class="p">(</span><span class="s2">&quot;psi&quot;</span><span class="p">,</span> <span class="n">binning_strategy</span><span class="o">=</span><span class="s2">&quot;default&quot;</span><span class="p">,</span> <span class="n">bin_count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">psi_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">distribution_test</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -969,11 +942,8 @@ PSI: Critical values defined according to Yurdakul (2018):
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">k_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">ks</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">k_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">ks</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -1002,12 +972,9 @@ KS: Null hypothesis rejected with 99% confidence. Distributions very different.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">distribution_test</span> <span class="o">=</span> <span class="n">DistributionStatistics</span><span class="p">(</span><span class="s2">&quot;ks&quot;</span><span class="p">,</span> <span class="n">binning_strategy</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">distribution_test</span> <span class="o">=</span> <span class="n">DistributionStatistics</span><span class="p">(</span><span class="s2">&quot;ks&quot;</span><span class="p">,</span> <span class="n">binning_strategy</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 <span class="n">ks_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">distribution_test</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">
@@ -1036,11 +1003,8 @@ KS: Null hypothesis rejected with 99% confidence. Distributions very different.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">probatus.stat_tests</span> <span class="kn">import</span> <span class="n">AutoDist</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">probatus.stat_tests</span> <span class="kn">import</span> <span class="n">AutoDist</span>
 </code></pre></div>
-
-
 
 </div>
 </div>
@@ -1054,14 +1018,11 @@ KS: Null hypothesis rejected with 99% confidence. Distributions very different.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">size</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span>
+<div class="highlight"><pre><span></span><code><span class="n">size</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span>
 
 <span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;feat_</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_features</span><span class="p">)])</span>
 <span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;feat_</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_features</span><span class="p">)])</span>
 </code></pre></div>
-
-
 
 </div>
 </div>
@@ -1075,12 +1036,9 @@ KS: Null hypothesis rejected with 99% confidence. Distributions very different.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">statistical_tests</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;KS&quot;</span><span class="p">,</span> <span class="s2">&quot;PSI&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="n">statistical_tests</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;KS&quot;</span><span class="p">,</span> <span class="s2">&quot;PSI&quot;</span><span class="p">]</span>
 <span class="n">binning_strategies</span> <span class="o">=</span> <span class="s2">&quot;default&quot;</span>
 </code></pre></div>
-
-
 
 </div>
 </div>
@@ -1094,12 +1052,9 @@ KS: Null hypothesis rejected with 99% confidence. Distributions very different.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-
-<div class="codehilite"><pre><span></span><code><span class="n">myAutoDist</span> <span class="o">=</span> <span class="n">AutoDist</span><span class="p">(</span><span class="n">statistical_tests</span><span class="o">=</span><span class="n">statistical_tests</span><span class="p">,</span> <span class="n">binning_strategies</span><span class="o">=</span><span class="n">binning_strategies</span><span class="p">,</span> <span class="n">bin_count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">myAutoDist</span> <span class="o">=</span> <span class="n">AutoDist</span><span class="p">(</span><span class="n">statistical_tests</span><span class="o">=</span><span class="n">statistical_tests</span><span class="p">,</span> <span class="n">binning_strategies</span><span class="o">=</span><span class="n">binning_strategies</span><span class="p">,</span> <span class="n">bin_count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">myAutoDist</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">)</span>
 </code></pre></div>
-
-
 
 </div>
 <div class="output_wrapper">

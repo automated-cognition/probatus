@@ -5,14 +5,14 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Python package for validation of binary classifiers" name="description"/>
+<meta content="Validation of binary classifiers and data used to develop them" name="description"/>
 <link href="https://ing-bank.github.io/probatus/api/sample_similarity.html" rel="canonical"/>
 <meta content="ING Bank N. V." name="author"/>
 <link href="../img/Probatus_P_white.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-6.1.4" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-6.1.5" name="generator"/>
 <title>probatus.sample_similarity - Probatus Docs</title>
-<link href="../assets/stylesheets/main.358818c7.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.f0267088.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.21aed14c.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.196e0c26.min.css" rel="stylesheet"/>
 <meta content="#ff6e42" name="theme-color"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -59,7 +59,7 @@
 <label class="md-search__overlay" for="__search"></label>
 <div class="md-search__inner" role="search">
 <form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
 <label class="md-search__icon md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
@@ -98,18 +98,18 @@
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../index.html">
-          Home
-        </a>
+      Home
+    </a>
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../tutorials/nb_shap_feature_elimination.html">
-          Tutorials
-        </a>
+        Tutorials
+      </a>
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link md-tabs__link--active" href="feature_elimination.html">
-          API
-        </a>
+        API
+      </a>
 </li>
 </ul>
 </div>
@@ -137,25 +137,10 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" id="nav-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-1">
-      Home
-      <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Home" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="nav-1">
-<span class="md-nav__icon md-icon"></span>
-        Home
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../index.html">
-      Index
+      Home
     </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
@@ -176,7 +161,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../tutorials/nb_shap_model_interpreter.html">
-      Tree-based Model Interpretation with SHAP
+      Tree-based &amp; Linear Model Interpretation with SHAP
     </a>
 </li>
 <li class="md-nav__item">
@@ -338,6 +323,11 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../contributing.html">
+      Contributing
+    </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -473,7 +463,8 @@ By looking at the test AUC, one can conclude that the samples have different dis
     effect the most. Thus, their distribution might differ between two samples.</p>
 <p><strong>Examples:</strong></p>
 <br/>
-<div class="codehilite">
+<p>
+<div class="highlight">
 <pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_classification</span>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
 <span class="kn">from</span> <span class="nn">probatus.sample_similarity</span> <span class="kn">import</span> <span class="n">PermutationImportanceResemblance</span>
@@ -485,7 +476,7 @@ By looking at the test AUC, one can conclude that the samples have different dis
 <span class="n">perm</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </code></pre>
 </div>
-<p><img src="../img/sample_similarity_permutation_importance.png" width="500"/></p>
+<img src="../img/sample_similarity_permutation_importance.png" width="500"/></p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="probatus.sample_similarity.resemblance_model.PermutationImportanceResemblance.__init__">
@@ -1186,7 +1177,7 @@ when you want to edit the returned axis, before showing it.</p>
 <p>This class currently works only with the Tree based models.</p>
 <p><strong>Examples:</strong></p>
 <br/>
-<div class="codehilite">
+<div class="highlight">
 <pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_classification</span>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
 <span class="kn">from</span> <span class="nn">probatus.sample_similarity</span> <span class="kn">import</span> <span class="n">SHAPImportanceResemblance</span>
